@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 1em;
+}
+
+h3 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid;
+}
+
+.videos_list {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-left: 1em;
+
+    button {
+        padding: 1em;
+        margin-bottom: 1em;
+        background-color: #eee;
+
+        &:hover {
+            background-color: #bbb;
+        }
+
+        &.selected {
+            color: #eee;
+            background-color: #777;
+
+            &:hover {
+                background-color: #555;
+            }
+        }
+    }
+}
